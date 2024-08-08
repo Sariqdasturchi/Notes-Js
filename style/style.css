@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Grey+Qo&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grey+Qo&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+.section-menu {
+    width: 450px;
+    height: 100vh;
+    background-color: #4C5270;
+}
+
+.section-edit-note {
+    width: 100%;
+    height: 100vh;
+}
+
+.note-logo {
+    width: 100%;
+    height: 75px;
+    padding: 15px;
+    border-bottom: 1px solid silver;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.note-logo img {
+    width: 40px;
+}
+
+.note-logo h1 {
+    font-size: 28px;
+    font-family: "Montserrat", sans-serif;
+    color: white;
+}
+
+.note-create-btn {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    margin-top: 25px;
+    padding: 15px;
+    /* border: 1px solid red; */
+}
+
+.note-create-btn button {
+    width: 150px;
+    height: 64px;
+    border: none;
+    border-radius: 12px;
+    background-color: #D6AD60;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    cursor: pointer;
+}
+
+.note-create-btn button:hover {
+    background-color: transparent;
+    border: 1px solid #D6AD60;
+    color: #D6AD60;
+    transition: .3s;
+}
+
+.note-create {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 75px;
+    padding: 15px;
+    margin-top: 15px;
+    /* border: 1px solid red; */
+}
+
+.note-create h1 {
+    font-size: 36px;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+    color: white;
+}
+
+.note-create button {
+    width: 70px;
+    height: 44px;
+    border: none;
+    border: 1px solid #D6AD60;
+    border-radius: 8px;
+    background-color: transparent;
+    font-size: 24px;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+    color: #D6AD60;
+    cursor: pointer;
+}
+
+.note-create button:hover {
+    background-color: #D6AD60;
+    color: white;
+    transition: .3s;
+}
+
+.note-create-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 600px;
+    margin-top: 25px;
+    overflow-y: auto;
+}
+
+.note-container {
+    width: 95%;
+    height: 74px;
+    padding: 20px;
+    margin: 10px;
+    background-color: #02020244;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.note-container h1 {
+    font-size: 26px;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+    color: white;
+}
+
+.note-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    margin-top: 25px;
+    padding: 15px;
+    /* border: 1px solid red; */
+}
+
+.note-footer-text h1 {
+    text-align: center;
+    font-size: 17px;
+    font-weight: 400;
+    font-family: "Montserrat", sans-serif;
+    color: white;
+}
+
+.note-messages {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 90%;
+    height: 40px;
+    margin: 5px;
+    /* border: 1px solid green; */
+}
+
+.note-messages a {
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+    color: white;
+}
+
+.note-messages a:hover {
+    color: #D6AD60;
+    transition: .3s;
+}
+
+.home {
+    width: 79%;
+    height: 100vh;
+    background-color: white;
+   /* border: 1px solid red; */
+}
+
+.note-home-text {
+    width: 100%;
+    height: 85px;
+    padding: 15px;
+    padding-left: 35px;
+}
+
+.note-home-text h1 {
+    font-size: 36px;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+    color: #4C5270;
+}
+
+.note-home-text p {
+    font-size: 20px;
+    font-weight: 400;
+    font-family: "Montserrat",sans-serif;
+    color: #4C5270;
+}
+
+.note-home-cards {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    width: 100%;
+    height: 870px;
+    padding: 35px;
+    margin: 25px auto;
+    margin-top: 40px;
+    overflow-y: auto;
+}
+
+.note-home-cards-title {
+    position: absolute;
+    width: 100%;
+    height: 70px;
+    padding: 35px;
+    /* border: 1px solid red; */
+}
+
+.note-home-cards-title h1 {
+    font-size: 24px;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+}
+
+.note-card {
+    width: 370px;
+    height: 420px;
+    padding: 25px;
+    background-color: #D6AD60;
+    border:1px solid silver;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.note-card:hover {
+    background-color: silver;
+    transition: .4s;
+}
+
+.note-card div {
+    margin-bottom: 15px;
+}
+
+.note-card h1 {
+    font-size: 36px;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+    color: #212121;
+}
+
+.note-card p {
+    font-size: 20px;
+    font-weight: 400;
+    font-family: "Montserrat", sans-serif;
+    color: #212121;
+}
+
+.note-card h3 {
+    font-size: 20px;
+    font-weight: 400;
+    font-family: "Montserrat", sans-serif;
+    color: #212121ad;
+}
+
+/* ====== MODAL ======= */
+.modal {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(83, 75, 75);
+    opacity: ;
+    z-index: 1;
+}
+
+.modal-container {
+    width: 570px;
+    height: 450px;
+    background-color: white;
+}
